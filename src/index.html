@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewImage Gallery Interface</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <label>
+        Название:
+        <input type="text" class="title" placeholder="Введите название">
+      </label>
+      <label>
+        Ссылка на изображение:
+        <input type="text" class="image_link" placeholder="Введите ссылку">
+      </label>
+      <button type="submit" class="button_add">Добавить</button>
+      <div class="error-message"></div>
+    </div>
+    <div class="dnd-form">
+      <input type="file" class="overlapped">
+      <span class="overlap">Перетащи сюда файл ...</span>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+  </div>
+
+  <div class="modal">
+    <button class="close_btn">X</button>
+    <img alt="Увеличенное изображение" class="modal_image">
+  </div>
+</body>
+</html>
